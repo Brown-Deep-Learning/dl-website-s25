@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CSCI 1470 - Deep Learning | Brown University"
+    />
+    <title>Interactive Visualizations - CS1470 Deep Learning</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png" />
+    <script type="module" crossorigin src="/dl-website-s24/assets/main-538b482e.js"></script>
+    <link rel="stylesheet" href="/dl-website-s24/assets/index-c5a44762.css">
+  </head>
+  <body class="overflow-x-hidden text-sm md:text-base">
+    <div id="scene" class="fixed top-0 -z-50"></div>
+    <div id="app" class="w-screen">
+      <header
+        id="header"
+        class="items-left fixed top-0 z-10 flex w-screen flex-col justify-between gap-8 rounded-none bg-white p-4 px-8 font-serif shadow-md lg:flex-row lg:items-center"
+      >
+        <div class="flex items-center justify-between">
+          <h1
+            class="flex-none text-2xl font-semibold text-slate-600 md:text-4xl"
+          >
+            <a class="block text-slate-600 no-underline" href="index.html">Deep Learning</a>
+          </h1>
+        </div>
+        <nav id="nav" class="nav mb-4 hidden lg:mb-0 lg:block">
+          <ul class="flex flex-col gap-4 text-xl lg:flex-row lg:gap-8">
+            <li>
+              <a class="block no-underline hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="block no-underline hover:underline" href="index.html#lectures">Lectures</a>
+            </li>
+            <li>
+              <a class="block no-underline hover:underline" href="index.html#assignments">Assignments</a>
+            </li>
+            <li>
+              <a class="block no-underline hover:underline" href="index.html#hours">Hours</a>
+            </li>
+            <li>
+              <a class="block no-underline hover:underline" href="index.html#resources">Resources</a>
+            </li>
+            <li>
+              <a class="block no-underline hover:underline" href="index.html#staff">Staff</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main
+        id="main"
+        class="frosted-clear sticky top-0 flex w-full flex-col items-center justify-center gap-4 text-slate-600"
+      >
+        <div
+          class="frosted flex max-w-full flex-col px-8 pb-16 md:max-w-screen-lg md:px-16 md:pt-0 lg:gap-0"
+        >
+          <section class="flex flex-col gap-6 pt-32 md:pt-32">
+            <h2 class="text-3xl font-semibold md:text-4xl">
+              Interactive Visualizations
+            </h2>
+            <p class="text-lg">Explore key concepts in deep learning through interactive demonstrations.</p>
+
+            <!-- MSE Visualization -->
+            <div class="mt-8">
+              <h3 class="text-2xl font-medium mb-4">Mean Squared Error</h3>
+              <div class="frosted rounded-lg p-6">
+                <p class="mb-4">Understand how Mean Squared Error (MSE) changes as you adjust the line of best fit. The heatmap shows the MSE landscape across different parameter values.</p>
+                <div id="mse-viz"></div>
+              </div>
+            </div>
+<!-- 
+            <!-- Additional visualizations can be added here -->
+            <div class="mt-8">
+              <h3 class="text-2xl font-medium mb-4">Gradient Descent</h3>
+              <div class="frosted rounded-lg p-6">
+                <p class="mb-4">Visualize how gradient descent optimizes parameters to find the minimum of a loss function.</p>
+                <div id="gradient-descent-viz"></div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h3 class="text-2xl font-medium mb-4">Neural Network Architecture</h3>
+              <div class="frosted rounded-lg p-6">
+                <p class="mb-4">Explore how neural networks process information through multiple layers.</p>
+                <div id="neural-network-viz"></div>
+              </div>
+            </div> -->
+
+            <!-- Template for future visualizations -->
+            <!-- <div class="mt-8">
+              <h3 class="text-2xl font-medium mb-4">[Visualization Title]</h3>
+              <div class="frosted rounded-lg p-6">
+                <p class="mb-4">[Visualization Description]</p>
+                <div id="[visualization-id]"></div>
+              </div>
+            </div> -->
+
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
