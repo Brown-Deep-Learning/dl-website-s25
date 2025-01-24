@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MSE Visualization</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 24px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #334155;
+        }
+
+        .visualization-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 20px 0;
+        }
+
+        .plot-container {
+            background: white;
+            border-radius: 8px;
+            padding: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* Slider styles */
+        .controls {
+            margin: 20px 0;
+        }
+
+        .slider-container {
+            margin: 16px 0;
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin: 8px 0;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .metric-box {
+            background: #f8fafc;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .metric-label {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #334155;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-title">
+            Mean Squared Error Visualization
+        </div>
+        <div class="visualization-container">
+            <div class="plot-container">
+                <svg id="scatter-plot" width="400" height="300"></svg>
+            </div>
+            <div class="plot-container">
+                <svg id="heatmap" width="400" height="300"></svg>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span>Slope</span>
+                    <span id="slope-value">1.00</span>
+                </div>
+                <input type="range" id="slope" min="0" max="2" step="0.1" value="1">
+            </div>
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span>Intercept</span>
+                    <span id="intercept-value">0.00</span>
+                </div>
+                <input type="range" id="intercept" min="-2" max="4" step="0.1" value="0">
+            </div>
+        </div>
+        <div class="metrics">
+            <div class="metric-box">
+                <div class="metric-label">Mean Squared Error</div>
+                <div id="mse-value" class="metric-value">0.000</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-label">Mean Error</div>
+                <div id="error-value" class="metric-value">0.000</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data setup
+        const data = [
+            { x: 1, y: 2 },
+            { x: 2, y: 4 },
+            { x: 3, y: 3.5 },
+            { x: 4, y: 6 },
+            { x: 5, y: 5.5 },
+            { x: 2.5, y: 3 },
+            { x: 4.5, y: 5 },
+            { x: 1.5, y: 2.5 }
+        ];
+
+        // SVG setup for scatter plot
+        const scatterPlot = document.getElementById('scatter-plot');
+        const width = 400;
+        const height = 300;
+        const padding = 40;
+
+        // Scale functions
+        function xScale(x) {
+            return (x * (width - 2 * padding) / 6) + padding;
+        }
+
+        function yScale(y) {
+            return height - ((y * (height - 2 * padding) / 8) + padding);
+        }
+
+        // Create grid lines
+        for (let i = 0; i < 6; i++) {
+            const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("x1", xScale(i));
+            line.setAttribute("y1", padding);
+            line.setAttribute("x2", xScale(i));
+            line.setAttribute("y2", height - padding);
+            line.setAttribute("stroke", "#f1f5f9");
+            line.setAttribute("stroke-width", "1");
+            scatterPlot.appendChild(line);
+        }
+
+        for (let i = 0; i < 8; i++) {
+            const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("x1", padding);
+            line.setAttribute("y1", yScale(i));
+            line.setAttribute("x2", width - padding);
+            line.setAttribute("y2", yScale(i));
+            line.setAttribute("stroke", "#f1f5f9");
+            line.setAttribute("stroke-width", "1");
+            scatterPlot.appendChild(line);
+        }
+
+        // Create axes
+        const xAxis = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        xAxis.setAttribute("x1", padding);
+        xAxis.setAttribute("y1", height - padding);
+        xAxis.setAttribute("x2", width - padding);
+        xAxis.setAttribute("y2", height - padding);
+        xAxis.setAttribute("stroke", "#94a3b8");
+        xAxis.setAttribute("stroke-width", "2");
+        scatterPlot.appendChild(xAxis);
+
+        const yAxis = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        yAxis.setAttribute("x1", padding);
+        yAxis.setAttribute("y1", height - padding);
+        yAxis.setAttribute("x2", padding);
+        yAxis.setAttribute("y2", padding);
+        yAxis.setAttribute("stroke", "#94a3b8");
+        yAxis.setAttribute("stroke-width", "2");
+        scatterPlot.appendChild(yAxis);
+
+        // Plot data points
+        data.forEach(point => {
+            const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("cx", xScale(point.x));
+            circle.setAttribute("cy", yScale(point.y));
+            circle.setAttribute("r", "4");
+            circle.setAttribute("fill", "#3b82f6");
+            scatterPlot.appendChild(circle);
+        });
+
+        // SVG setup for heatmap
+        const heatmap = document.getElementById('heatmap');
+        const heatmapPadding = 40;
+
+        function getHeatmapColor(mse) {
+            // Scale MSE to a value between 0 and 1
+            const normalizedMSE = Math.min(mse / 10, 1);
+            const h = (1 - normalizedMSE) * 240; // Blue to Red
+            return `hsl(${h}, 70%, 50%)`;
+        }
+
+        // Create heatmap grid
+        const gridSize = 40;
+        const cellSize = (width - 2 * heatmapPadding) / gridSize;
+
+        for (let i = 0; i < gridSize; i++) {
+            for (let j = 0; j < gridSize; j++) {
+                const slope = (i / gridSize) * 2;
+                const intercept = (j / gridSize) * 6 - 2;
+                
+                // Calculate MSE for this point
+                const mse = data.reduce((sum, point) => {
+                    const predicted = slope * point.x + intercept;
+                    const error = predicted - point.y;
+                    return sum + error * error;
+                }, 0) / data.length;
+
+                const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                rect.setAttribute("x", heatmapPadding + i * cellSize);
+                rect.setAttribute("y", heatmapPadding + j * cellSize);
+                rect.setAttribute("width", cellSize);
+                rect.setAttribute("height", cellSize);
+                rect.setAttribute("fill", getHeatmapColor(mse));
+                heatmap.appendChild(rect);
+            }
+        }
+
+        // Function to update visualization
+        function updateVisualization() {
+            const slope = parseFloat(document.getElementById('slope').value);
+            const intercept = parseFloat(document.getElementById('intercept').value);
+
+            // Update value displays
+            document.getElementById('slope-value').textContent = slope.toFixed(2);
+            document.getElementById('intercept-value').textContent = intercept.toFixed(2);
+
+            // Remove old regression line and error lines
+            const oldLines = scatterPlot.querySelectorAll('.regression-line, .error-line');
+            oldLines.forEach(line => line.remove());
+
+            // Draw new regression line
+            const lineStart = { x: 0, y: intercept };
+            const lineEnd = { x: 6, y: slope * 6 + intercept };
+
+            const regressionLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            regressionLine.setAttribute("x1", xScale(lineStart.x));
+            regressionLine.setAttribute("y1", yScale(lineStart.y));
+            regressionLine.setAttribute("x2", xScale(lineEnd.x));
+            regressionLine.setAttribute("y2", yScale(lineEnd.y));
+            regressionLine.setAttribute("stroke", "#10b981");
+            regressionLine.setAttribute("stroke-width", "2");
+            regressionLine.setAttribute("class", "regression-line");
+            scatterPlot.appendChild(regressionLine);
+
+            // Draw error lines and calculate metrics
+            let totalError = 0;
+            let totalSquaredError = 0;
+
+            data.forEach(point => {
+                const predicted = slope * point.x + intercept;
+                const error = predicted - point.y;
+                totalError += Math.abs(error);
+                totalSquaredError += error * error;
+
+                const errorLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                errorLine.setAttribute("x1", xScale(point.x));
+                errorLine.setAttribute("y1", yScale(point.y));
+                errorLine.setAttribute("x2", xScale(point.x));
+                errorLine.setAttribute("y2", yScale(predicted));
+                errorLine.setAttribute("stroke", "#f43f5e");
+                errorLine.setAttribute("stroke-opacity", "0.5");
+                errorLine.setAttribute("stroke-dasharray", "2,2");
+                errorLine.setAttribute("class", "error-line");
+                scatterPlot.appendChild(errorLine);
+            });
+
+            // Update metrics
+            const mse = totalSquaredError / data.length;
+            const meanError = totalError / data.length;
+
+            document.getElementById('mse-value').textContent = mse.toFixed(4);
+            document.getElementById('error-value').textContent = meanError.toFixed(4);
+
+            // Update heatmap marker
+            const oldMarker = heatmap.querySelector('.current-point');
+            if (oldMarker) oldMarker.remove();
+
+            const markerX = heatmapPadding + (slope / 2) * (width - 2 * heatmapPadding);
+            const markerY = heatmapPadding + ((intercept + 2) / 6) * (height - 2 * heatmapPadding);
+
+            const marker = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            marker.setAttribute("cx", markerX);
+            marker.setAttribute("cy", markerY);
+            marker.setAttribute("r", "6");
+            marker.setAttribute("fill", "#10b981");
+            marker.setAttribute("stroke", "white");
+            marker.setAttribute("stroke-width", "2");
+            marker.setAttribute("class", "current-point");
+            heatmap.appendChild(marker);
+        }
+
+        // Add event listeners
+        document.getElementById('slope').addEventListener('input', updateVisualization);
+        document.getElementById('intercept').addEventListener('input', updateVisualization);
+
+        // Initial update
+        updateVisualization();
+    </script>
+</body>
+</html>
