@@ -239,15 +239,34 @@
         }
 
         // Create heatmap grid
-        // Create heatmap grid
 const gridSize = 40;
 const cellSize = (width - 2 * heatmapPadding) / gridSize;
 
+// Add axes to heatmap for debugging
+const xAxisHeatmap = document.createElementNS("http://www.w3.org/2000/svg", "line");
+xAxisHeatmap.setAttribute("x1", heatmapPadding);
+xAxisHeatmap.setAttribute("y1", height - heatmapPadding);
+xAxisHeatmap.setAttribute("x2", width - heatmapPadding);
+xAxisHeatmap.setAttribute("y2", height - heatmapPadding);
+xAxisHeatmap.setAttribute("stroke", "#94a3b8");
+xAxisHeatmap.setAttribute("stroke-width", "2");
+heatmap.appendChild(xAxisHeatmap);
+
+const yAxisHeatmap = document.createElementNS("http://www.w3.org/2000/svg", "line");
+yAxisHeatmap.setAttribute("x1", heatmapPadding);
+yAxisHeatmap.setAttribute("y1", height - heatmapPadding);
+yAxisHeatmap.setAttribute("x2", heatmapPadding);
+yAxisHeatmap.setAttribute("y2", heatmapPadding);
+yAxisHeatmap.setAttribute("stroke", "#94a3b8");
+yAxisHeatmap.setAttribute("stroke-width", "2");
+heatmap.appendChild(yAxisHeatmap);
+
 for (let i = 0; i < gridSize; i++) {
     for (let j = 0; j < gridSize; j++) {
-        // Fix the mapping of i,j to slope,intercept
-        const slope = (i / gridSize) * 2; // 0 to 2
-        const intercept = ((gridSize - j - 1) / gridSize) * 6 - 2; // -2 to 4, inverted y-axis
+        // Map i to slope (x-axis) from 0 to 2
+        const slope = i * (2 / gridSize);
+        // Map j to intercept (y-axis) from -2 to 4, inverted
+        const intercept = 4 - j * (6 / gridSize);
         
         const mse = data.reduce((sum, point) => {
             const predicted = slope * point.x + intercept;
@@ -265,9 +284,9 @@ for (let i = 0; i < gridSize; i++) {
     }
 }
 
-// Also fix the marker position calculation in updateVisualization()
+// Update marker position calculation
 const markerX = heatmapPadding + (slope / 2) * (width - 2 * heatmapPadding);
-const markerY = heatmapPadding + (1 - (intercept + 2) / 6) * (height - 2 * heatmapPadding);
+const markerY = heatmapPadding + ((4 - intercept) / 6) * (height - 2 * heatmapPadding);
 
         // Function to update visualization
         function updateVisualization() {
