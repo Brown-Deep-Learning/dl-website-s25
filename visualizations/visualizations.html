@@ -239,29 +239,35 @@
         }
 
         // Create heatmap grid
-        const gridSize = 40;
-        const cellSize = (width - 2 * heatmapPadding) / gridSize;
+        // Create heatmap grid
+const gridSize = 40;
+const cellSize = (width - 2 * heatmapPadding) / gridSize;
 
-        for (let i = 0; i < gridSize; i++) {
-            for (let j = 0; j < gridSize; j++) {
-                const slope = (i / gridSize) * 2;
-                const intercept = (j / gridSize) * 6 - 2;
-                
-                const mse = data.reduce((sum, point) => {
-                    const predicted = slope * point.x + intercept;
-                    const error = predicted - point.y;
-                    return sum + error * error;
-                }, 0) / data.length;
+for (let i = 0; i < gridSize; i++) {
+    for (let j = 0; j < gridSize; j++) {
+        // Fix the mapping of i,j to slope,intercept
+        const slope = (i / gridSize) * 2; // 0 to 2
+        const intercept = ((gridSize - j - 1) / gridSize) * 6 - 2; // -2 to 4, inverted y-axis
+        
+        const mse = data.reduce((sum, point) => {
+            const predicted = slope * point.x + intercept;
+            const error = predicted - point.y;
+            return sum + error * error;
+        }, 0) / data.length;
 
-                const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-                rect.setAttribute("x", heatmapPadding + i * cellSize);
-                rect.setAttribute("y", heatmapPadding + j * cellSize);
-                rect.setAttribute("width", cellSize);
-                rect.setAttribute("height", cellSize);
-                rect.setAttribute("fill", getHeatmapColor(mse));
-                heatmap.appendChild(rect);
-            }
-        }
+        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("x", heatmapPadding + i * cellSize);
+        rect.setAttribute("y", heatmapPadding + j * cellSize);
+        rect.setAttribute("width", cellSize);
+        rect.setAttribute("height", cellSize);
+        rect.setAttribute("fill", getHeatmapColor(mse));
+        heatmap.appendChild(rect);
+    }
+}
+
+// Also fix the marker position calculation in updateVisualization()
+const markerX = heatmapPadding + (slope / 2) * (width - 2 * heatmapPadding);
+const markerY = heatmapPadding + (1 - (intercept + 2) / 6) * (height - 2 * heatmapPadding);
 
         // Function to update visualization
         function updateVisualization() {
