@@ -1,7 +1,17 @@
-import type { NextConfig } from "next";
+// next.config.ts
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const isProd = process.env.NODE_ENV === "production";
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  assetPrefix: isProd ? "/" : "",
+  basePath: "/dl-website-s25", // Update if your repository name is different
+  images: {
+    unoptimized: true,
+  },
+  trailingSlash: true,
+
+  output: "export",
 };
 
 export default nextConfig;
