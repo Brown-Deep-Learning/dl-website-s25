@@ -26,8 +26,8 @@ export const lectureGroups: LectureGroup[] = [
         title: "Perceptron and MNIST",
         date: "2025-01-27",
         slidesLink: "slides/lecture3.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=27806295-bbba-4bc0-8add-b0fb012be3ed",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d09d79e7-b6a1-4f59-a14c-b26c0177a6ef",
       },
       {
         id: 4,
