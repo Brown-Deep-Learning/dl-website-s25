@@ -22,7 +22,7 @@ export const staffData = {
       name: "Yuyang Luo",
       pronouns: "he/him",
       image: "/images/profiles/yuyang.jpg",
-      spaceCreature: "Manatee",
+      spaceCreature: "",
       role: "Flight Engineer",
     },
     {
