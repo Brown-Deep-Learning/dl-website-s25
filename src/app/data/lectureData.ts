@@ -33,7 +33,7 @@ export const lectureGroups: LectureGroup[] = [
         id: 4,
         title: "Perceptron (continued) and Loss Functions",
         date: "2025-01-29",
-        // slidesLink: "slides/lecture4.pdf",
+        slidesLink: "slides/lecture4.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=498a5e27-d268-4f77-9d12-b0fb012be406",
       },
