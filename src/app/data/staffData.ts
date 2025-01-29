@@ -16,7 +16,6 @@ export const staffData = {
       name: "Dave Lubawski",
       pronouns: "he/him",
       image: "/images/profiles/dave.jpg",
-      spaceCreature: "Narwhal",
       role: "Flight Director",
     },
     {
