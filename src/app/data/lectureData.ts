@@ -31,11 +31,67 @@ export const lectureGroups: LectureGroup[] = [
       },
       {
         id: 4,
-        title: "Perceptron (continued) and Loss Functions",
+        title: "Perceptrons (continued), MNIST, and MLPs",
         date: "2025-01-29",
         slidesLink: "slides/lecture4.pdf",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 5,
+        title: "Loss Functions and Gradient Descent",
+        date: "2025-01-29",
+        // slidesLink: "slides/lecture4.pdf",
         // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=498a5e27-d268-4f77-9d12-b0fb012be406",
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 6,
+        title: "Backpropagation",
+        date: "2025-01-29",
+        // slidesLink: "slides/lecture4.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 7,
+        title: "Tensorflow and Autodiff",
+        date: "2025-01-29",
+        // slidesLink: "slides/lecture4.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+            {
+        id: 8,
+        title: "Linear Algebra, Matrices, and GPUs",
+        date: "2025-01-29",
+        // slidesLink: "slides/lecture4.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 9,
+        title: "Building Blocks of Deep Learning: Activation functions and multi-layer networks",
+        date: "2025-01-29",
+        // slidesLink: "slides/lecture4.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 10,
+        title: "Hyperparameter Tuning and Practical Advice for Training",
+        date: "2025-01-29",
+        // slidesLink: "slides/lecture4.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 10,
+        title: "Convolutions Day 1",
+        date: "2025-01-29",
+        // slidesLink: "slides/lecture4.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
     ],
   },
