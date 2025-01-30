@@ -24,12 +24,12 @@ const Assignments = () => {
               </h3>
               <div className={styles.assignmentDates}>
                 <span className={styles.assignmentDate}>
-                  <span className={styles.dateLabel}>In Date:</span>
-                  {assignment.inDate}
-                </span>
-                <span className={styles.assignmentDate}>
                   <span className={styles.dateLabel}>Out Date:</span>
                   {assignment.outDate}
+                </span>
+                <span className={styles.assignmentDate}>
+                  <span className={styles.dateLabel}>In Date:</span>
+                  {assignment.inDate}
                 </span>
               </div>
               <div className={styles.assignmentParts}>
