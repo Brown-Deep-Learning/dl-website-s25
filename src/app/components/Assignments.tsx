@@ -5,6 +5,8 @@ import { assignments } from "../data/assignmentData";
 import { FaRocket, FaRegMoon, FaStar } from "react-icons/fa";
 
 const Assignments = () => {
+  const sortedAssignments = [...assignments].sort((a, b) => a.id - b.id);
+
   return (
     <section id="assignments" className={styles.container}>
       <div className={styles.meteor}></div>
@@ -15,7 +17,7 @@ const Assignments = () => {
         <FaStar className={styles.headerStar} />
       </h2>
       <div className={styles.assignmentList}>
-        {assignments.map((assignment) => (
+        {sortedAssignments.map((assignment) => (
           <div key={assignment.id} className={styles.assignmentItem}>
             <div className={styles.glowOrb}></div>
             <div className={styles.assignmentInfo}>

@@ -8,7 +8,7 @@
 }
 
 .calendarContainer {
-  max-width: 1400px; /* Increased from 1200px */
+  max-width: 1300px; /* Increased from 1200px */
   margin: 0 auto;
   position: relative;
 }
@@ -46,7 +46,7 @@
 
 .calendarWrapper {
   position: relative;
-  width: 100%;
+  width: 95%;
   height: 800px; /* Increased from 600px */
   border-radius: 20px;
   overflow: visible; /* Changed from hidden to show orbital path */

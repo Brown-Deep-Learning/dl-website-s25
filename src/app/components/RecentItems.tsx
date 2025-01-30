@@ -63,10 +63,10 @@ const RecentItems = () => {
         <div className={styles.itemContent}>
           <span className={styles.itemTitle}>{recentAssignment.name}</span>
           <span className={styles.itemDate}>
-            In Date: {recentAssignment.inDate}
+            Out Date: {recentAssignment.outDate}
           </span>
           <span className={styles.itemDate}>
-            Out Date: {recentAssignment.outDate}
+            In Date: {recentAssignment.inDate}
           </span>
           <div className={styles.links}>
             {recentAssignment.conceptual && (
