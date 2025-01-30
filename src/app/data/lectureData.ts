@@ -19,7 +19,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-01-24",
         slidesLink: "slides/lecture2.pdf",
         recordingLink:
-          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7eba1cc4-0a87-4b7e-b8bc-b26c0177a6cb"
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7eba1cc4-0a87-4b7e-b8bc-b26c0177a6cb",
       },
       {
         id: 3,
@@ -27,7 +27,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-01-27",
         slidesLink: "slides/lecture3.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d09d79e7-b6a1-4f59-a14c-b26c0177a6ef",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d09d79e7-b6a1-4f59-a14c-b26c0177a6ef",
       },
       {
         id: 4,
@@ -35,7 +35,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-01-29",
         slidesLink: "slides/lecture4.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
       {
         id: 5,
@@ -61,7 +61,7 @@ export const lectureGroups: LectureGroup[] = [
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
-            {
+      {
         id: 8,
         title: "Linear Algebra, Matrices, and GPUs",
         date: "2025-02-10",
@@ -71,7 +71,8 @@ export const lectureGroups: LectureGroup[] = [
       },
       {
         id: 9,
-        title: "Building Blocks of Deep Learning: Activation functions and multi-layer networks",
+        title:
+          "Building Blocks of Deep Learning: Activation functions and multi-layer networks",
         date: "2025-02-12",
         // slidesLink: "slides/lecture4.pdf",
         // recordingLink:
@@ -86,7 +87,7 @@ export const lectureGroups: LectureGroup[] = [
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
       {
-        id: 10,
+        id: 11,
         title: "Convolutions Day 1",
         date: "2025-02-19",
         // slidesLink: "slides/lecture4.pdf",
