@@ -40,14 +40,14 @@ export const lectureGroups: LectureGroup[] = [
       {
         id: 5,
         title: "Loss Functions and Gradient Descent",
-        date: "2025-02-3",
-        // slidesLink: "slides/lecture4.pdf",
+        date: "2025-01-31",
+        slidesLink: "slides/lecture5.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
       {
         id: 6,
-        title: "Backpropagation",
+        title: "Backpropagation and SGD",
         date: "2025-02-5",
         // slidesLink: "slides/lecture4.pdf",
         // recordingLink:
@@ -69,19 +69,19 @@ export const lectureGroups: LectureGroup[] = [
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
-      {
-        id: 9,
-        title:
-          "Building Blocks of Deep Learning: Activation functions and multi-layer networks",
-        date: "2025-02-12",
-        // slidesLink: "slides/lecture4.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
-      },
+      // {
+      //   id: 9,
+      //   title:
+      //     "Building Blocks of Deep Learning: Activation functions and multi-layer networks",
+      //   date: "2025-02-12",
+      //   // slidesLink: "slides/lecture4.pdf",
+      //   // recordingLink:
+      //   // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      // },
       {
         id: 10,
         title: "Hyperparameter Tuning and Practical Advice for Training",
-        date: "2025-02-14",
+        date: "2025-02-12",
         // slidesLink: "slides/lecture4.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
@@ -89,7 +89,7 @@ export const lectureGroups: LectureGroup[] = [
       {
         id: 11,
         title: "Convolutions Day 1",
-        date: "2025-02-19",
+        date: "2025-02-14",
         // slidesLink: "slides/lecture4.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
