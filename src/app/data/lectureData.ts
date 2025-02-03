@@ -42,8 +42,8 @@ export const lectureGroups: LectureGroup[] = [
         title: "Loss Functions and Gradient Descent",
         date: "2025-01-31",
         slidesLink: "slides/lecture5.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f3257416-cb60-4f5a-afda-b26c0177a736",
       },
       {
         id: 6,
