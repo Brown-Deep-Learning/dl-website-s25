@@ -31,7 +31,7 @@ export const assignments = [
     name: "Assignment 2: BERAS",
     link: "https://hackmd.io/@BDLS25/r1K-41_Okl",
     outDate: "2025-02-05",
-    inDate: "2025-02-26",
+    inDate: "Conceptual: 2025-02-19, Programming: 2025-02-26",
     programming: {
       title: "Programming",
       link: "https://hackmd.io/@BDLS25/r1K-41_Okl"
