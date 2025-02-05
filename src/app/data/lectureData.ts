@@ -48,7 +48,7 @@ export const lectureGroups: LectureGroup[] = [
       {
         id: 6,
         title: "Backpropagation and SGD",
-        date: "2025-02-5",
+        date: "2025-02-3",
         slidesLink: "slides/Lecture6.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
@@ -56,8 +56,8 @@ export const lectureGroups: LectureGroup[] = [
       {
         id: 7,
         title: "Tensorflow and Autodiff",
-        date: "2025-02-7",
-        // slidesLink: "slides/lecture4.pdf",
+        date: "2025-02-5",
+        slidesLink: "slides/lecture7.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
