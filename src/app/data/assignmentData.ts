@@ -39,5 +39,6 @@ export const assignments = [
     conceptual: {
       title: "Conceptual",
       link: "https://hackmd.io/@BDLS25/rkKjOKSDJe"
+    },
   },
 ];
