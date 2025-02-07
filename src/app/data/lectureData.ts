@@ -55,7 +55,7 @@ export const lectureGroups: LectureGroup[] = [
       },
       {
         id: 7,
-        title: "Tensorflow and Autodiff",
+        title: "Gradients and Backprop",
         date: "2025-02-5",
         slidesLink: "slides/lecture7.pdf",
         // recordingLink:
@@ -63,9 +63,9 @@ export const lectureGroups: LectureGroup[] = [
       },
       {
         id: 8,
-        title: "Linear Algebra, Matrices, and GPUs",
-        date: "2025-02-10",
-        // slidesLink: "slides/lecture4.pdf",
+        title: "TensorFlow and Autodiff",
+        date: "2025-02-7",
+        slidesLink: "slides/lecture8.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
