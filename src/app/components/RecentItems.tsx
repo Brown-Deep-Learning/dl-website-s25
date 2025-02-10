@@ -1,13 +1,25 @@
+// components/RecentItems.tsx
 import React from "react";
 import styles from "./RecentItems.module.css";
 import { lectureGroups } from "../data/lectureData";
-import { Assignment } from "../types";
-import { FaRocket, FaRegMoon } from "react-icons/fa";
 import { assignments } from "../data/assignmentData";
+import { FaRocket, FaRegMoon } from "react-icons/fa";
+
+// Helper to get the max inDate from conceptual or programming
+function getMaxInDate(assignment: any): number {
+  // If there's no date, treat it as 0 (or -Infinity).
+  const conceptualDate = assignment.conceptual?.inDate
+    ? new Date(assignment.conceptual.inDate).getTime()
+    : 0;
+  const programmingDate = assignment.programming?.inDate
+    ? new Date(assignment.programming.inDate).getTime()
+    : 0;
+  return Math.max(conceptualDate, programmingDate);
+}
 
 const getMostRecentLecture = () => {
   const allLectures = lectureGroups.flatMap((group) => group.lectures);
-  // Filter lectures that have both slidesLink and recordingLink
+  // Filter or sort by date
   const lecturesWithLinks = allLectures.filter(
     (lecture) => lecture.slidesLink || lecture.recordingLink
   );
@@ -17,57 +29,110 @@ const getMostRecentLecture = () => {
 };
 
 const getMostRecentAssignment = () => {
-  return assignments.sort(
-    (a: Assignment, b: Assignment) =>
-      new Date(b.inDate).getTime() - new Date(a.inDate).getTime()
-  )[0];
+  // Sort assignments by the largest in-date among their parts
+  const sorted = [...assignments].sort(
+    (a, b) => getMaxInDate(b) - getMaxInDate(a)
+  );
+  return sorted[0];
 };
 
 const RecentItems = () => {
   const recentLecture = getMostRecentLecture();
   const recentAssignment = getMostRecentAssignment();
 
+  // If no assignment found, you might want to handle that case gracefully
+  if (!recentAssignment) {
+    return (
+      <section className={styles.container}>
+        <div className={styles.recentItem}>
+          <h3 className={styles.title}>Most Recent Lecture</h3>
+          <p>No lectures found.</p>
+        </div>
+        <div className={styles.recentItem}>
+          <h3 className={styles.title}>Most Recent Assignment</h3>
+          <p>No assignments found.</p>
+        </div>
+      </section>
+    );
+  }
+
+  // Render the assignment carefully, depending on whether conceptual/programming exist:
+  const hasConceptual = !!recentAssignment.conceptual;
+  const hasProgramming = !!recentAssignment.programming;
+
   return (
     <section className={styles.container}>
+      {/* Recent Lecture */}
       <div className={styles.recentItem}>
         <h3 className={styles.title}>Most Recent Lecture</h3>
-        <div className={styles.itemContent}>
-          <span className={styles.itemTitle}>{recentLecture.title}</span>
-          <span className={styles.itemDate}>{recentLecture.date}</span>
-          <div className={styles.links}>
-            {recentLecture.slidesLink && (
-              <a
-                href={recentLecture.slidesLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.linkButton}
-              >
-                <FaRegMoon className={styles.linkIcon} /> Slides
-              </a>
-            )}
-            {recentLecture.recordingLink && (
-              <a
-                href={recentLecture.recordingLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.linkButton}
-              >
-                <FaRocket className={styles.linkIcon} /> Recording
-              </a>
-            )}
+        {recentLecture ? (
+          <div className={styles.itemContent}>
+            <span className={styles.itemTitle}>{recentLecture.title}</span>
+            <span className={styles.itemDate}>{recentLecture.date}</span>
+            <div className={styles.links}>
+              {recentLecture.slidesLink && (
+                <a
+                  href={recentLecture.slidesLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.linkButton}
+                >
+                  <FaRegMoon className={styles.linkIcon} /> Slides
+                </a>
+              )}
+              {recentLecture.recordingLink && (
+                <a
+                  href={recentLecture.recordingLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.linkButton}
+                >
+                  <FaRocket className={styles.linkIcon} /> Recording
+                </a>
+              )}
+            </div>
           </div>
-        </div>
+        ) : (
+          <p>No lectures found.</p>
+        )}
       </div>
+
+      {/* Recent Assignment */}
       <div className={styles.recentItem}>
         <h3 className={styles.title}>Most Recent Assignment</h3>
         <div className={styles.itemContent}>
           <span className={styles.itemTitle}>{recentAssignment.name}</span>
+
+          {/* Display out date */}
           <span className={styles.itemDate}>
-            Out Date: {recentAssignment.outDate}
+            <strong>Out Date:</strong> {recentAssignment.outDate}
           </span>
-          <span className={styles.itemDate}>
-            In Date: {recentAssignment.inDate}
-          </span>
+
+          {/* If both conceptual & programming exist, show both in-dates, etc. */}
+          {hasConceptual && hasProgramming && (
+            <span className={styles.itemDate}>
+              <strong>In Dates:</strong> Conceptual:{" "}
+              {recentAssignment.conceptual?.inDate}, Programming:{" "}
+              {recentAssignment.programming?.inDate}
+            </span>
+          )}
+          {hasConceptual && !hasProgramming && (
+            <span className={styles.itemDate}>
+              <strong>In Date:</strong> {recentAssignment.conceptual?.inDate}
+            </span>
+          )}
+          {!hasConceptual && hasProgramming && (
+            <span className={styles.itemDate}>
+              <strong>In Date:</strong> {recentAssignment.programming?.inDate}
+            </span>
+          )}
+          {!hasConceptual && !hasProgramming && (
+            <span className={styles.itemDate}>
+              <strong>In Date:</strong> N/A
+            </span>
+          )}
+
+          {/* Buttons for conceptual vs. programming */}
           <div className={styles.links}>
             {recentAssignment.conceptual && (
               <a
