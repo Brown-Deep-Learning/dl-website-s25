@@ -43,7 +43,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-01-31",
         slidesLink: "slides/lecture5.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f3257416-cb60-4f5a-afda-b26c0177a736",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f3257416-cb60-4f5a-afda-b26c0177a736",
       },
       {
         id: 6,
@@ -51,43 +51,34 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-02-3",
         slidesLink: "slides/Lecture6.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=33b77d05-52d7-4f5f-a005-b26c0177a750",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=33b77d05-52d7-4f5f-a005-b26c0177a750",
       },
       {
         id: 7,
         title: "Gradients and Backprop",
         date: "2025-02-5",
         slidesLink: "slides/lecture7.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fe8e87a1-3fa3-402e-9f6f-b26c0177a775",
       },
       {
         id: 8,
         title: "TensorFlow and Autodiff",
         date: "2025-02-7",
         slidesLink: "slides/lecture8.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4c3750c5-8512-48fe-90ae-b26c0177a797",
       },
-      // {
-      //   id: 9,
-      //   title:
-      //     "Building Blocks of Deep Learning: Activation functions and multi-layer networks",
-      //   date: "2025-02-12",
-      //   // slidesLink: "slides/lecture4.pdf",
-      //   // recordingLink:
-      //   // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
-      // },
       {
-        id: 10,
+        id: 9,
         title: "Hyperparameter Tuning and Practical Advice for Training",
         date: "2025-02-10",
-        // slidesLink: "slides/lecture9.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        slidesLink: "slides/lecture9.pdf",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7dd8c07a-efeb-49d7-93c2-b26c0177a7bb",
       },
       {
-        id: 11,
+        id: 10,
         title: "Convolutions Day 1",
         date: "2025-02-12",
         // slidesLink: "slides/lecture4.pdf",
