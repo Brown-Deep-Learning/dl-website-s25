@@ -2,6 +2,7 @@
 
 "use client";
 
+import { Analytics } from "@vercel/analytics/react";
 import LandingPage from "./components/LandingPage";
 import CourseDescription from "./components/CourseDescription";
 import styles from "./page.module.css";
@@ -46,6 +47,7 @@ export default function Home() {
         </section>
 
         {/* Add more sections here */}
+        <Analytics />
       </div>
     </main>
   );
