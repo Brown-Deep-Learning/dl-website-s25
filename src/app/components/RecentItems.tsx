@@ -4,9 +4,10 @@ import styles from "./RecentItems.module.css";
 import { lectureGroups } from "../data/lectureData";
 import { assignments } from "../data/assignmentData";
 import { FaRocket, FaRegMoon } from "react-icons/fa";
+import { Assignment } from "../types";
 
 // Helper to get the max inDate from conceptual or programming
-function getMaxInDate(assignment: any): number {
+function getMaxInDate(assignment: Assignment): number {
   // If there's no date, treat it as 0 (or -Infinity).
   const conceptualDate = assignment.conceptual?.inDate
     ? new Date(assignment.conceptual.inDate).getTime()

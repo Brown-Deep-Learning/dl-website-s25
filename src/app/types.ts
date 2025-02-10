@@ -15,15 +15,15 @@ export interface LectureGroup {
 export interface Assignment {
   id: number;
   name: string;
-  link: string;
-  inDate: string;
   outDate: string;
   conceptual?: {
     title: string;
     link: string;
+    inDate: string;
   };
   programming?: {
     title: string;
     link: string;
+    inDate: string;
   };
 }
