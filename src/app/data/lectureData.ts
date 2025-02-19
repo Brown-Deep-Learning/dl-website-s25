@@ -93,6 +93,14 @@ export const lectureGroups: LectureGroup[] = [
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
+                  {
+        id: 10,
+        title: "CNN Architectures",
+        date: "2025-02-19",
+        slidesLink: "slides/lecture12.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
     ],
   },
   // Add more groups for Weeks 5-8, 9-12, etc. as necessary
