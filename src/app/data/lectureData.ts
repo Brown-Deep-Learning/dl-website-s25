@@ -104,8 +104,32 @@ export const lectureGroups: LectureGroup[] = [
       {
         id: 10,
         title: "CNN Architectures",
-        date: "2025-02-19",
+        date: "2025-02-21",
         slidesLink: "slides/lecture13.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 10,
+        title: "ResNet and Regularization",
+        date: "2025-02-24",
+        slidesLink: "slides/lecture14.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 10,
+        title: "Adversarial Learning",
+        date: "2025-02-26",
+        // slidesLink: "slides/lecture14.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
+      {
+        id: 10,
+        title: "Graph Convolutions",
+        date: "2025-02-28",
+        // slidesLink: "slides/lecture14.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
