@@ -121,7 +121,7 @@ export const lectureGroups: LectureGroup[] = [
         id: 10,
         title: "Adversarial Learning",
         date: "2025-02-26",
-        // slidesLink: "slides/lecture14.pdf",
+        slidesLink: "slides/lecture15.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
