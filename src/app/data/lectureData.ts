@@ -98,32 +98,32 @@ export const lectureGroups: LectureGroup[] = [
         title: "CNN Architectures",
         date: "2025-02-19",
         slidesLink: "slides/lecture12.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fa27ac2a-ac69-465b-91ac-b26c0177a83d",
       },
       {
         id: 10,
         title: "CNN Architectures",
         date: "2025-02-21",
         slidesLink: "slides/lecture13.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3aa8fbac-2142-45b6-b2ee-b26c0177a868",
       },
       {
         id: 10,
         title: "ResNet and Regularization",
         date: "2025-02-24",
         slidesLink: "slides/lecture14.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=42cf0b6b-77ca-4e0d-8d73-b26c0177a88f",
       },
       {
         id: 10,
         title: "Adversarial Learning",
         date: "2025-02-26",
         slidesLink: "slides/lecture15.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4e13b68a-d0a2-4ed5-a96a-b26c0177a8ad",
       },
       {
         id: 10,
