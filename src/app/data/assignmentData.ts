@@ -45,7 +45,7 @@ export const assignments = [
     // This one has both conceptual and programming:
     conceptual: {
       title: "Conceptual",
-      link: "https://hackmd.io/@BDLS25/rkKjOKSDJe",
+      link: "https://hackmd.io/@BDLS25/HyAwuKrwkg",
       inDate: "2025-03-12",
     },
     programming: {
