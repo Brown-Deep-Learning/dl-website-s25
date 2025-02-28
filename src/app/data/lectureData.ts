@@ -127,9 +127,9 @@ export const lectureGroups: LectureGroup[] = [
       },
       {
         id: 10,
-        title: "Graph Convolutions",
+        title: "Graph Neural Networks",
         date: "2025-02-28",
-        // slidesLink: "slides/lecture14.pdf",
+        slidesLink: "slides/lecture16.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
