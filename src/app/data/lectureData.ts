@@ -133,6 +133,14 @@ export const lectureGroups: LectureGroup[] = [
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
       },
+      {
+        id: 10,
+        title: "Language Modelling",
+        date: "2025-03-3",
+        slidesLink: "slides/lecture17.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+      },
     ],
   },
   // Add more groups for Weeks 5-8, 9-12, etc. as necessary
