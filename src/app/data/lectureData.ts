@@ -130,16 +130,16 @@ export const lectureGroups: LectureGroup[] = [
         title: "Graph Neural Networks",
         date: "2025-02-28",
         slidesLink: "slides/lecture16.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aaf1aea4-71b7-4d09-ba44-b26c0177a8e0",
       },
       {
         id: 10,
         title: "Language Modelling",
         date: "2025-03-3",
         slidesLink: "slides/lecture17.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8fb8f55-a37e-4ad8-b161-b26c0177a70d",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
       },
     ],
   },
