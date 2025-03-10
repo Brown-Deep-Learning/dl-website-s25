@@ -161,7 +161,7 @@ export const lectureGroups: LectureGroup[] = [
         id: 20,
         title: "LSTMs and seq2seq",
         date: "2025-03-10",
-        slidesLink: "slides/lecture20.pdf",
+        slidesLink: "slides/Lecture20.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
       },
