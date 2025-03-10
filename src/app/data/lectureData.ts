@@ -86,7 +86,7 @@ export const lectureGroups: LectureGroup[] = [
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b57438e7-9f5c-4160-a871-b26c0177a7e0",
       },
             {
-        id: 10,
+        id: 11,
         title: "Convolutions Day 2",
         date: "2025-02-14",
         slidesLink: "slides/lecture11.pdf",
@@ -94,7 +94,7 @@ export const lectureGroups: LectureGroup[] = [
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a52dd20-18a3-4d1a-9a20-b26c0177a803",
       },
                   {
-        id: 10,
+        id: 12,
         title: "CNN Architectures",
         date: "2025-02-19",
         slidesLink: "slides/lecture12.pdf",
@@ -102,7 +102,7 @@ export const lectureGroups: LectureGroup[] = [
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fa27ac2a-ac69-465b-91ac-b26c0177a83d",
       },
       {
-        id: 10,
+        id: 13,
         title: "CNN Architectures",
         date: "2025-02-21",
         slidesLink: "slides/lecture13.pdf",
@@ -110,7 +110,7 @@ export const lectureGroups: LectureGroup[] = [
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3aa8fbac-2142-45b6-b2ee-b26c0177a868",
       },
       {
-        id: 10,
+        id: 14,
         title: "ResNet and Regularization",
         date: "2025-02-24",
         slidesLink: "slides/lecture14.pdf",
@@ -118,7 +118,7 @@ export const lectureGroups: LectureGroup[] = [
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=42cf0b6b-77ca-4e0d-8d73-b26c0177a88f",
       },
       {
-        id: 10,
+        id: 15,
         title: "Adversarial Learning",
         date: "2025-02-26",
         slidesLink: "slides/lecture15.pdf",
@@ -126,7 +126,7 @@ export const lectureGroups: LectureGroup[] = [
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4e13b68a-d0a2-4ed5-a96a-b26c0177a8ad",
       },
       {
-        id: 10,
+        id: 16,
         title: "Graph Neural Networks",
         date: "2025-02-28",
         slidesLink: "slides/lecture16.pdf",
@@ -134,7 +134,7 @@ export const lectureGroups: LectureGroup[] = [
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aaf1aea4-71b7-4d09-ba44-b26c0177a8e0",
       },
       {
-        id: 10,
+        id: 17,
         title: "Language Modelling",
         date: "2025-03-3",
         slidesLink: "slides/lecture17.pdf",
@@ -142,25 +142,25 @@ export const lectureGroups: LectureGroup[] = [
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
       },
       {
-        id: 10,
+        id: 18,
         title: "Introduction to RNNs",
         date: "2025-03-5",
         slidesLink: "slides/lecture18.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=203a031c-ba56-418b-9987-b26c0177a94a",
       },
       {
-        id: 10,
+        id: 19,
         title: "RNNs and LSTMs",
-        date: "2025-03-5",
+        date: "2025-03-7",
         slidesLink: "slides/lecture19.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b92d3e29-3291-4fb3-ade3-b26c0177a980",
       },
             {
-        id: 10,
+        id: 20,
         title: "LSTMs and seq2seq",
-        date: "2025-03-5",
+        date: "2025-03-10",
         slidesLink: "slides/lecture20.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
