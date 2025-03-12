@@ -165,6 +165,13 @@ export const lectureGroups: LectureGroup[] = [
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
       },
+      id: 21,
+        title: "LSTMs and seq2seq",
+        date: "2025-03-12",
+        slidesLink: "slides/lecture21.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
+      },
     ],
   },
   // Add more groups for Weeks 5-8, 9-12, etc. as necessary
