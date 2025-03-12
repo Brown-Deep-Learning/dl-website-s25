@@ -83,23 +83,23 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-02-12",
         slidesLink: "slides/lecture10.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b57438e7-9f5c-4160-a871-b26c0177a7e0",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b57438e7-9f5c-4160-a871-b26c0177a7e0",
       },
-            {
+      {
         id: 11,
         title: "Convolutions Day 2",
         date: "2025-02-14",
         slidesLink: "slides/lecture11.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a52dd20-18a3-4d1a-9a20-b26c0177a803",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a52dd20-18a3-4d1a-9a20-b26c0177a803",
       },
-                  {
+      {
         id: 12,
         title: "CNN Architectures",
         date: "2025-02-19",
         slidesLink: "slides/lecture12.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fa27ac2a-ac69-465b-91ac-b26c0177a83d",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fa27ac2a-ac69-465b-91ac-b26c0177a83d",
       },
       {
         id: 13,
@@ -107,7 +107,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-02-21",
         slidesLink: "slides/lecture13.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3aa8fbac-2142-45b6-b2ee-b26c0177a868",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3aa8fbac-2142-45b6-b2ee-b26c0177a868",
       },
       {
         id: 14,
@@ -115,7 +115,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-02-24",
         slidesLink: "slides/lecture14.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=42cf0b6b-77ca-4e0d-8d73-b26c0177a88f",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=42cf0b6b-77ca-4e0d-8d73-b26c0177a88f",
       },
       {
         id: 15,
@@ -123,7 +123,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-02-26",
         slidesLink: "slides/lecture15.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4e13b68a-d0a2-4ed5-a96a-b26c0177a8ad",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4e13b68a-d0a2-4ed5-a96a-b26c0177a8ad",
       },
       {
         id: 16,
@@ -131,7 +131,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-02-28",
         slidesLink: "slides/lecture16.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aaf1aea4-71b7-4d09-ba44-b26c0177a8e0",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aaf1aea4-71b7-4d09-ba44-b26c0177a8e0",
       },
       {
         id: 17,
@@ -139,7 +139,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-03-3",
         slidesLink: "slides/lecture17.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
       },
       {
         id: 18,
@@ -147,7 +147,7 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-03-5",
         slidesLink: "slides/lecture18.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=203a031c-ba56-418b-9987-b26c0177a94a",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=203a031c-ba56-418b-9987-b26c0177a94a",
       },
       {
         id: 19,
@@ -155,17 +155,18 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-03-7",
         slidesLink: "slides/lecture19.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b92d3e29-3291-4fb3-ade3-b26c0177a980",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b92d3e29-3291-4fb3-ade3-b26c0177a980",
       },
-            {
+      {
         id: 20,
         title: "LSTMs and seq2seq",
         date: "2025-03-10",
         slidesLink: "slides/Lecture20.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0038e13f-402c-45b3-b5fc-b26c0177a9a6",
       },
-      id: 21,
+      {
+        id: 21,
         title: "LSTMs and seq2seq",
         date: "2025-03-12",
         slidesLink: "slides/lecture21.pdf",
@@ -174,5 +175,4 @@ export const lectureGroups: LectureGroup[] = [
       },
     ],
   },
-  // Add more groups for Weeks 5-8, 9-12, etc. as necessary
 ];
