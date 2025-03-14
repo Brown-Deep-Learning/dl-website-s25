@@ -170,8 +170,8 @@ export const lectureGroups: LectureGroup[] = [
         title: "seq2seq and Attention",
         date: "2025-03-12",
         slidesLink: "slides/lecture21.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5bc0a1a5-35dd-4836-a64e-b26c0177a9d1",
       },
             {
         id: 21,
