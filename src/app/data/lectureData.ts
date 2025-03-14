@@ -167,9 +167,17 @@ export const lectureGroups: LectureGroup[] = [
       },
       {
         id: 21,
-        title: "LSTMs and seq2seq",
+        title: "seq2seq and Attention",
         date: "2025-03-12",
         slidesLink: "slides/lecture21.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
+      },
+            {
+        id: 21,
+        title: "Attention",
+        date: "2025-03-14",
+        slidesLink: "slides/lecture22.pdf",
         // recordingLink:
         // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
       },
