@@ -54,4 +54,18 @@ export const assignments = [
       inDate: "2025-03-14",
     },
   },
+  {id: 5,
+   name: "Assignment 4: Image Captioning",
+   outDate: "2025-03-17",
+   conceptual: {
+     title: "Conceptual",
+     link: "https://hackmd.io/@BDLS25/HyTyFKHv1g",
+     inDate: "2025-03-21",
+   },
+   programming: {
+     title: "Programming",
+     link: "https://hackmd.io/@BDLS25/r1SvCgX3ke",
+     inDate: "2025-04-04",
+   },
+  }
 ];
