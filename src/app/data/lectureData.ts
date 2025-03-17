@@ -178,8 +178,8 @@ export const lectureGroups: LectureGroup[] = [
         title: "Attention",
         date: "2025-03-14",
         slidesLink: "slides/lecture22.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd047063-5a44-4a8f-802f-b26c0177a91f",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
       },
     ],
   },
