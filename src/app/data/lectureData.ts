@@ -171,24 +171,25 @@ export const lectureGroups: LectureGroup[] = [
         date: "2025-03-12",
         slidesLink: "slides/lecture21.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5bc0a1a5-35dd-4836-a64e-b26c0177a9d1",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5bc0a1a5-35dd-4836-a64e-b26c0177a9d1",
       },
-            {
+      {
         id: 21,
         title: "Attention",
         date: "2025-03-14",
         slidesLink: "slides/lecture22.pdf",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
       },
-                  {
+      {
         id: 22,
         title: "Guest Lecture: Jason Liu, Language Grounding for Robotics",
         date: "2025-03-17",
         slidesLink: "",
         recordingLink:
-        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
-      },            {
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
+      },
+      {
         id: 23,
         title: "Transformers",
         date: "2025-03-19",
