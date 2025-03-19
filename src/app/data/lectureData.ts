@@ -194,8 +194,8 @@ export const lectureGroups: LectureGroup[] = [
         title: "Transformers",
         date: "2025-03-19",
         slidesLink: "slides/lecture23.pdf",
-        // recordingLink:
-        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e869dbf6-af7f-4d29-aa9c-b26c0177aa50",
       },
     ],
   },
