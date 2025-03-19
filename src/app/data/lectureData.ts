@@ -181,6 +181,21 @@ export const lectureGroups: LectureGroup[] = [
         recordingLink:
         "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
       },
+                  {
+        id: 22,
+        title: "Guest Lecture: Jason Liu, Language Grounding for Robotics",
+        date: "2025-03-17",
+        slidesLink: "",
+        recordingLink:
+        "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
+      },            {
+        id: 23,
+        title: "Transformers",
+        date: "2025-03-19",
+        slidesLink: "slides/lecture23.pdf",
+        // recordingLink:
+        // "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aeae9460-d38d-45c5-a938-b26c0177aa08",
+      },
     ],
   },
 ];
