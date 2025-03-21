@@ -197,6 +197,14 @@ export const lectureGroups: LectureGroup[] = [
         recordingLink:
           "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e869dbf6-af7f-4d29-aa9c-b26c0177aa50",
       },
+      {
+        id: 24,
+        title: "LLMs",
+        date: "2025-03-21",
+        slidesLink: "slides/lecture24.pdf",
+        // recordingLink:
+        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e869dbf6-af7f-4d29-aa9c-b26c0177aa50",
+      },
     ],
   },
 ];
