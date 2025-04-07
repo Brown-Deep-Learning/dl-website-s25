@@ -229,6 +229,14 @@ export const lectureGroups: LectureGroup[] = [
         // recordingLink:
         //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
       },
+      {
+        id: 24,
+        title: "Diffusion Models",
+        date: "2025-04-7",
+        slidesLink: "slides/lecture28.pdf",
+        // recordingLink:
+        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+      },
     ],
   },
 ];
