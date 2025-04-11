@@ -249,7 +249,7 @@ export const lectureGroups: LectureGroup[] = [
         id: 30,
         title: "Conditional Generative Models and Intro to RL",
         date: "2025-04-11",
-        slidesLink: "slides/lecture30.pdf",
+        slidesLink: "slides/lecture30.pptx",
         // recordingLink:
         //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
       },
