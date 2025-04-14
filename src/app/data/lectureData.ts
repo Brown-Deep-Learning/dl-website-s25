@@ -247,9 +247,17 @@ export const lectureGroups: LectureGroup[] = [
       },
             {
         id: 30,
-        title: "Conditional Generative Models and Intro to RL",
+        title: "Q-Learning",
         date: "2025-04-11",
         slidesLink: "slides/lecture30.pptx",
+        // recordingLink:
+        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+      },
+      {
+        id: 31,
+        title: "Q-Learning and Policy Gradient Methods",
+        date: "2025-04-14",
+        slidesLink: "slides/lecture31.pdf",
         // recordingLink:
         //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
       },
