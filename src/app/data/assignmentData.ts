@@ -73,7 +73,7 @@ export const assignments = [
    outDate: "2025-04-14",
    conceptual: {
      title: "Conceptual",
-     link: "https://hackmd.io/@BDLS25/Bka4nFKRyg",
+     link: "https://hackmd.io/@BDLS25/r1l0sljAkg",
      inDate: "2025-04-25",
    },
    programming: {
