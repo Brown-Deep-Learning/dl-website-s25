@@ -67,5 +67,19 @@ export const assignments = [
      link: "https://hackmd.io/@BDLS25/r1SvCgX3ke",
      inDate: "2025-04-04",
    },
+  },
+  {id: 5,
+   name: "Assignment 5: Reinforcement Learning",
+   outDate: "2025-04-14",
+   conceptual: {
+     title: "Conceptual",
+     link: "https://hackmd.io/@BDLS25/Bka4nFKRyg",
+     inDate: "2025-04-21",
+   },
+   programming: {
+     title: "Programming",
+     link: "https://hackmd.io/@BDLS25/HJudUydCJe",
+     inDate: "2025-04-25",
+   },
   }
 ];
