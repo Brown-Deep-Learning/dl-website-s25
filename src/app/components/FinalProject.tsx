@@ -15,10 +15,6 @@ export default function FinalProject() {
           </p>
         </div>
 
-        <h3 className={styles.subtitle}>Overview</h3>
-        <p>
-          You will complete final projects in groups of 3-4 people. These projects are an opportunity for you to apply the knowledge you&apos;ve gained in class to a topic or area of interest. Your group may implement research papers, existing projects, or create entirely new projects.
-        </p>
 
         <h3 className={styles.subtitle}>Key Deadlines</h3>
         <div className={styles.deadlines}>
