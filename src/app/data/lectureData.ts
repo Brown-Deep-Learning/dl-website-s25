@@ -210,56 +210,56 @@ export const lectureGroups: LectureGroup[] = [
         title: "Image Generation",
         date: "2025-03-31",
         slidesLink: "slides/lecture25.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=10d20ef4-9647-4697-9683-b26c0177ab0b",
       },
       {
         id: 24,
         title: "VAEs",
         date: "2025-04-2",
         slidesLink: "slides/Presentation26.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9fe92e9-ff4a-47ba-8078-b26c0177ab35",
       },
       {
         id: 24,
         title: "GANs",
         date: "2025-04-4",
         slidesLink: "slides/lecture27.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93e93068-972b-4779-9842-b26c0177ab57",
       },
       {
         id: 24,
         title: "Diffusion Models",
         date: "2025-04-7",
         slidesLink: "slides/lecture28.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9da6e8ab-c8f8-4308-b5c7-b26c0177ab83",
       },
-            {
+      {
         id: 24,
         title: "Conditional Generative Models and Intro to RL",
         date: "2025-04-9",
         slidesLink: "slides/lecture29.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2e3f688e-832b-404f-9ccf-b26c0177aba9",
       },
-            {
+      {
         id: 30,
         title: "Q-Learning",
         date: "2025-04-11",
         slidesLink: "slides/lecture30.pptx",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c7c9cf95-6481-4b1a-bfb3-b26c0177abc9",
       },
       {
         id: 31,
         title: "Q-Learning and Policy Gradient Methods",
         date: "2025-04-14",
         slidesLink: "slides/lecture31.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a9fab3a-15fd-4b1d-91b1-b26c0177aa70",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
       },
     ],
   },
