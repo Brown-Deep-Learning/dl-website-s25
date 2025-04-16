@@ -51,22 +51,6 @@ export default function FinalProject() {
             <div className={styles.deadlineDate}>May 2, 2025 (Fri) 10PM EST</div>
           </div>
         </div>
-
-        <h3 className={styles.subtitle}>Project Options</h3>
-        <div className={styles.options}>
-          <div className={styles.optionCard}>
-            <h4 className={styles.optionTitle}>Option 1: Re-implement a Research Paper</h4>
-            <p>Find a paper from a recent machine learning conference and try to reproduce its results. The re-implementation must not be a trivial effort.</p>
-          </div>
-          <div className={styles.optionCard}>
-            <h4 className={styles.optionTitle}>Option 2: Solve a New Problem</h4>
-            <p>Create a new project using deep learning methods to solve a problem of your choice. This is required for 1470-capstone students.</p>
-          </div>
-        </div>
-
-        <div className={styles.note}>
-          <p><strong>Note:</strong> NO Late Days may be used for the final submission date.</p>
-        </div>
       </div>
     </div>
   );

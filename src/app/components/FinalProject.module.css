@@ -5,6 +5,9 @@
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #fefce8;
+  border-radius: 0.5rem;
+  border: 1px solid #fef08a;
 }
 
 .title {
