@@ -49,7 +49,7 @@ export const lectureGroups: LectureGroup[] = [
         id: 6,
         title: "Backpropagation and SGD",
         date: "2025-02-3",
-        slidesLink: "slides/Lecture6.pdf",
+        slidesLink: "slides/lecture6.pdf",
         recordingLink:
           "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=33b77d05-52d7-4f5f-a005-b26c0177a750",
       },
@@ -161,7 +161,7 @@ export const lectureGroups: LectureGroup[] = [
         id: 20,
         title: "LSTMs and seq2seq",
         date: "2025-03-10",
-        slidesLink: "slides/Lecture20.pdf",
+        slidesLink: "slides/lecture20.pdf",
         recordingLink:
           "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0038e13f-402c-45b3-b5fc-b26c0177a9a6",
       },
@@ -249,7 +249,7 @@ export const lectureGroups: LectureGroup[] = [
         id: 30,
         title: "Q-Learning",
         date: "2025-04-11",
-        slidesLink: "slides/lecture30.pptx",
+        slidesLink: "slides/lecture30.pdf",
         recordingLink:
           "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c7c9cf95-6481-4b1a-bfb3-b26c0177abc9",
       },
