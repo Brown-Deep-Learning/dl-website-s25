@@ -11,7 +11,7 @@ export default function FinalProject() {
         
         <div className={styles.warning}>
           <p>
-            <strong>Please read the <a href="final-project.pdf" className={styles.link}>final project handout</a> in its entirety.</strong> It contains all the information, forms, and deadlines you&apos;ll need to know about!
+            <strong>Please read the <a href="https://hackmd.io/fCFRQMkxQxCLDTKt5KKchQ" className={styles.link}>final project handout</a> in its entirety.</strong> It contains all the information, forms, and deadlines you&apos;ll need to know about!
           </p>
         </div>
 
