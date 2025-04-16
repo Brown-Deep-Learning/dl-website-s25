@@ -13,6 +13,7 @@ import CourseCalendar from "./components/CourseCalendar";
 import Resources from "./components/Resources";
 import Staff from "./components/Staff";
 import NavBar from "./components/NavBar";
+import FinalProject from "./components/FinalProject";
 
 export default function Home() {
   return (
@@ -41,6 +42,9 @@ export default function Home() {
         </section>
         <section id="resources" className={styles.section}>
           <Resources />
+        </section>
+        <section id="final-project" className={styles.section}>
+          <FinalProject />
         </section>
         <section id="staff" className={styles.section}>
           <Staff />
