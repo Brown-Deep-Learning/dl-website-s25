@@ -49,7 +49,7 @@ export const lectureGroups: LectureGroup[] = [
         id: 6,
         title: "Backpropagation and SGD",
         date: "2025-02-3",
-        slidesLink: "slides/lecture6.pdf",
+        slidesLink: "slides/Lecture6.pdf",
         recordingLink:
           "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=33b77d05-52d7-4f5f-a005-b26c0177a750",
       },
@@ -274,6 +274,14 @@ export const lectureGroups: LectureGroup[] = [
         title: "PPO, Chat-GPT, and AGI",
         date: "2025-04-18",
         slidesLink: "slides/lecture33.pdf",
+        // recordingLink:
+        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
+      },
+      {
+        id: 34,
+        title: "The Future",
+        date: "2025-04-21",
+        slidesLink: "slides/lecture34.pdf",
         // recordingLink:
         //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
       },
