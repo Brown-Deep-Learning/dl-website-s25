@@ -285,6 +285,14 @@ export const lectureGroups: LectureGroup[] = [
         // recordingLink:
         //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
       },
+            {
+        id: 34,
+        title: "What Comes Next?",
+        date: "2025-04-21",
+        slidesLink: "slides/lecture35.pdf",
+        // recordingLink:
+        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
+      },
     ],
   },
 ];
