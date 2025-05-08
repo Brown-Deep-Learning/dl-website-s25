@@ -266,32 +266,32 @@ export const lectureGroups: LectureGroup[] = [
         title: "Actor-Critic and Friends",
         date: "2025-04-16",
         slidesLink: "slides/lecture32.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d071b393-d88a-4ed3-a563-b26c0177abfe",
       },
       {
         id: 33,
         title: "PPO, Chat-GPT, and AGI",
         date: "2025-04-18",
         slidesLink: "slides/lecture33.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d6ccfd7d-0476-44e7-adb9-b26c0177ac1a",
       },
       {
         id: 34,
         title: "The Future",
         date: "2025-04-21",
         slidesLink: "slides/lecture34.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b5c9cbea-a168-477d-a0f1-b26c0177ac53",
       },
-            {
-        id: 34,
+      {
+        id: 35,
         title: "What Comes Next?",
         date: "2025-04-21",
         slidesLink: "slides/lecture35.pdf",
-        // recordingLink:
-        //   "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=089a4eda-5f71-475d-9ced-b26c0177abe6",
+        recordingLink:
+          "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=20cac08f-9209-433e-86b7-b26c0177ac70",
       },
     ],
   },
