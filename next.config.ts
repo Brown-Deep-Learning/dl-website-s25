@@ -5,7 +5,7 @@ const isProd = process.env.NODE_ENV === "production";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   assetPrefix: isProd ? "/" : "",
-  basePath: "/dl-website-s25", // Update if your repository name is different
+  basePath: isProd ? "/dl-website-s25" : "", // Only use basePath in production
   images: {
     unoptimized: true,
   },
